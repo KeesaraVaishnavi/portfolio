@@ -10,8 +10,19 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    title: 'Software Developer Intern',
+    company: 'Digineous Pvt Ltd, Pune',
+    period: 'Present',
+    description: [
+      'Developed responsive and user-friendly frontend interfaces using React.js, ensuring cross-browser compatibility and optimized performance.',
+      'Integrated RESTful APIs with the frontend using Node.js, enabling seamless data flow between client and server components.',
+      'Collaborated with backend and product teams to implement scalable features, follow best coding practices, and improve overall application usability.'
+    ],
+    technologies: ['React', 'Node.js', 'Restful APIs', 'Web Technologies']
+  },
+  {
     title: 'Research Intern',
-    company: 'AIIMS Hospital',
+    company: 'AIIMS, Mangalagiri (Collabed with KLU)',
     period: 'Present',
     description: [
       'Collected real-time patient data for analysis and system development',
@@ -23,7 +34,7 @@ const experiences: ExperienceItem[] = [
   },
   {
     title: 'President, Data Science Club',
-    company: 'KL University',
+    company: 'KL University, Vaddeswaram',
     period: '2024 – 2025',
     description: [
       'Organized workshops and hackathons to enhance student skills in data science',
@@ -37,44 +48,58 @@ const experiences: ExperienceItem[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div className="w-full px-4 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-2">Work Experience</h2>
           <div className="w-20 h-1 bg-wine-700 mx-auto"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="relative border-l-2 border-wine-300 pl-8 ml-4">
-            {experiences.map((exp, index) => (
-              <div key={index} className="mb-12 relative">
-                <div className="absolute -left-12 w-8 h-8 bg-wine-700 rounded-full flex items-center justify-center text-white">
-                  {index + 1}
-                </div>
-                <div className="bg-gray-50 p-6 rounded-lg shadow-md border-l-4 border-wine-700">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-800">{exp.title}</h3>
-                      <p className="text-wine-700 font-medium">{exp.company}</p>
-                    </div>
-                    <p className="text-gray-600 mt-1 md:mt-0">{exp.period}</p>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border-t-4 border-wine-700"
+            >
+              <div className="p-6 h-full flex flex-col">
+                <div className="mb-4 flex items-start gap-3">
+                  <span className="inline-flex items-center justify-center w-8 h-8 bg-wine-700 text-white text-sm font-bold rounded-lg flex-shrink-0 group-hover:scale-110 transition-transform">
+                    {index + 1}
+                  </span>
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-800 group-hover:text-wine-700 transition-colors">
+                      {exp.title}
+                    </h3>
+                    <p className="text-wine-700 font-semibold text-sm mt-1">{exp.company}</p>
+                    <p className="text-gray-500 text-xs mt-2">{exp.period}</p>
                   </div>
-                  <ul className="list-disc pl-5 mb-4 space-y-2">
-                    {exp.description.map((item, i) => (
-                      <li key={i} className="text-gray-700">{item}</li>
-                    ))}
-                  </ul>
+                </div>
+
+                <ul className="space-y-3 mb-6 flex-1">
+                  {exp.description.map((item, i) => (
+                    <li key={i} className="flex gap-2">
+                      <span className="text-wine-700 font-bold flex-shrink-0 mt-1">•</span>
+                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="pt-4 border-t border-gray-200">
+                  <p className="text-xs font-semibold text-gray-600 mb-3 uppercase tracking-wide">Technologies</p>
                   <div className="flex flex-wrap gap-2">
                     {exp.technologies.map((tech, i) => (
-                      <span key={i} className="px-3 py-1 bg-wine-100 text-wine-800 text-sm rounded-full">
+                      <span
+                        key={i}
+                        className="px-3 py-1.5 bg-gradient-to-r from-wine-50 to-wine-100 text-wine-800 text-xs font-semibold rounded-lg hover:from-wine-100 hover:to-wine-200 transition-colors"
+                      >
                         {tech}
                       </span>
                     ))}
                   </div>
                 </div>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
