@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             duration={500}
             className={`text-xl lg:text-2xl font-semibold text-wine-700 ${grapeWineHover} transition-colors cursor-pointer flex items-center gap-2`}
           >
-            <Code size={24} /> <span className="hidden md:inline">Vaishnavi K</span>
+            <Code size={24} /> <span className="hidden md:inline">Vaishnavi Keesara</span>
             <span className="inline md:hidden font-bold">VK</span>
           </Link>
 
