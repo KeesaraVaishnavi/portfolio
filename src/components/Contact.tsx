@@ -1,42 +1,7 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
-
-interface FormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import React from 'react';
+import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from 'lucide-react';
 
 const Contact: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitMessage, setSubmitMessage] = useState('');
-  const [submitError, setSubmitError] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage('Thank you! Your message has been sent successfully.');
-      setSubmitError(false);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    }, 1500);
-  };
 
   return (
     <section id="contact" className="py-20 bg-white">
@@ -46,112 +11,60 @@ const Contact: React.FC = () => {
           <div className="w-20 h-1 bg-wine-700 mx-auto"></div>
         </div>
 
-        <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
-          <div className="lg:w-2/5">
-            <div className="bg-wine-700 text-white p-8 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
-              <p className="mb-8 opacity-90">
-                Feel free to reach out to me using any of the contact methods below. I'm open to discussing new opportunities, projects, or just connecting!
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <Mail className="mr-4" size={20} />
-                  <a href="mailto:2200030438cseh@gmail.com" className="hover:underline">2200030438cseh@gmail.com</a>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="mr-4" size={20} />
-                  <a href="tel:9032034945" className="hover:underline">+91 9032034945</a>
-                </div>
-                <div className="flex items-center">
-                  <MapPin className="mr-4" size={20} />
-                  <span>Andhra Pradesh, India</span>
-                </div>
-                <div className="flex items-center">
-                  <Linkedin className="mr-4" size={20} />
-                  <a href="https://www.linkedin.com/in/vaishu24" target="_blank" rel="noopener noreferrer" className="hover:underline">linkedin.com/in/vaishu24</a>
-                </div>
-                <div className="flex items-center">
-                  <Github className="mr-4" size={20} />
-                  <a href="https://github.com/kvaishnavi24" target="_blank" rel="noopener noreferrer" className="hover:underline">github.com/kvaishnavi24</a>
-                </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <a href="mailto:keesaravaishnavi2005@gmail.com" className="group">
+              <div className="bg-white border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg hover:border-wine-700 transition-all duration-300">
+                <Mail className="text-wine-700 mb-4" size={32} />
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Email</h3>
+                <p className="text-gray-600 group-hover:text-wine-700 transition-colors">keesaravaishnavi2005@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:9032034945" className="group">
+              <div className="bg-white border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg hover:border-wine-700 transition-all duration-300">
+                <Phone className="text-wine-700 mb-4" size={32} />
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Phone</h3>
+                <p className="text-gray-600 group-hover:text-wine-700 transition-colors">+91 9032034945</p>
+              </div>
+            </a>
+
+            <div className="group">
+              <div className="bg-white border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg hover:border-wine-700 transition-all duration-300">
+                <MapPin className="text-wine-700 mb-4" size={32} />
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Location</h3>
+                <p className="text-gray-600">Vijayawada, Andhra Pradesh, India</p>
               </div>
             </div>
-          </div>
-          
-          <div className="lg:w-3/5">
-            <form onSubmit={handleSubmit} className="bg-gray-50 p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Send Me a Message</h3>
-              
-              {submitMessage && (
-                <div 
-                  className={`p-4 mb-6 rounded-md ${submitError ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'}`}
-                >
-                  {submitMessage}
-                </div>
-              )}
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 mb-2">Your Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-wine-500 focus:border-transparent"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 mb-2">Your Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-wine-500 focus:border-transparent"
-                  />
+
+            <a href="https://www.linkedin.com/in/vaishu24" target="_blank" rel="noopener noreferrer" className="group">
+              <div className="bg-white border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg hover:border-wine-700 transition-all duration-300">
+                <Linkedin className="text-wine-700 mb-4" size={32} />
+                <h3 className="text-xl font-bold text-gray-800 mb-2">LinkedIn</h3>
+                <div className="flex items-center text-gray-600 group-hover:text-wine-700 transition-colors">
+                  <span>Connect with me</span>
+                  <ExternalLink className="ml-2" size={16} />
                 </div>
               </div>
-              
-              <div className="mb-6">
-                <label htmlFor="subject" className="block text-gray-700 mb-2">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-wine-500 focus:border-transparent"
-                />
+            </a>
+
+            <a href="https://github.com/KeesaraVaishnavi" target="_blank" rel="noopener noreferrer" className="group">
+              <div className="bg-white border-2 border-gray-200 p-8 rounded-lg shadow-md hover:shadow-lg hover:border-wine-700 transition-all duration-300">
+                <Github className="text-wine-700 mb-4" size={32} />
+                <h3 className="text-xl font-bold text-gray-800 mb-2">GitHub</h3>
+                <div className="flex items-center text-gray-600 group-hover:text-wine-700 transition-colors">
+                  <span>View projects</span>
+                  <ExternalLink className="ml-2" size={16} />
+                </div>
               </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={6}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-wine-500 focus:border-transparent"
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="px-6 py-3 bg-wine-700 text-white rounded-md hover:bg-wine-800 transition-colors font-medium disabled:opacity-70 disabled:cursor-not-allowed"
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
+            </a>
+
+            <div className="bg-gradient-to-br from-wine-700 to-wine-800 p-8 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-white mb-2">Let's Connect</h3>
+              <p className="text-white opacity-90">
+                I'm open to discussing new opportunities, projects, or just connecting! Feel free to reach out using any of the methods above.
+              </p>
+            </div>
           </div>
         </div>
       </div>
