@@ -18,79 +18,93 @@ interface CertificationItem {
 
 const educationItems: EducationItem[] = [
   {
-    degree: 'Bachelor of Technology in Computer Science and Engineering',
-    institution: 'KLEF, Vaddeswaram',
+    degree: 'Bachelor of Technology, Computer Science and Engineering - Honors',
+    institution: 'KL University, Vaddeswaram, Vijayawada',
     location: 'Andhra Pradesh',
     period: '2022 - 2026',
     details: [
-      'Current GPA: 9.4/10',
+      'Current CGPA: 9.4/10',
       'Specializing in Data Science and big data Analytics',
-      'Member of the College Coding Club',
+      'Completed 4 Stack Development courses with hands-on projects',
       'Participated in various hackathons and technical events'
     ]
   },
   {
-    degree: 'Higher Secondary Education',
-    institution: 'Sri Chaitanya Junior College',
+    degree: 'Board of Intermediate Secondary Education',
+    institution: 'Sri Chaitanya Junior College, Vijayawada',
     location: 'Andhra Pradesh',
     period: '2020 - 2022',
     details: [
-      'Achieved 95% in Mathematics and Science',
-      'Participated in various science competitions',
-      'Class Representative and active participant in cultural activities'
+      'CGPA:8.0/10',
+      'Achieved 95% in Mathematics',
+      'Foundation in Physics, Chemistry with practical lab experience'
     ]
   },
   {
-    degree: 'Secondary School (10th Grade)',
+    degree: 'Central Board of Secondary Education, High School',
     institution: 'N St Mathews Public School, Vijayawada',
     location: 'Andhra Pradesh',
     period: '2016 - 2020',
     details: [
       'CGPA: 8.5/10',
       'Completed core subjects including Mathematics, Social Sciences, and Languages',
-      'Actively participated in school-level science exhibitions and quizzes',
-      'Recognized for academic excellence and discipline'
+      'Actively participated in school-level science exhibitions',
+      'Participated in almost all extracurricular activities'
     ]
   }
 ];
 
 const certifications: CertificationItem[] = [
   {
-    name: 'AWS Cloud Practitioner',
-    issuer: 'Amazon Web Services',
-    date: '2024',
-    description: 'Fundamental understanding of AWS Cloud concepts, services, and architecture'
+    name: 'TalentNext Java Full Stack',
+    issuer: 'Wipro',
+    date: '2025'
   },
   {
-    name: 'Oracle Certified Professional',
-    issuer: 'Oracle',
-    date: '2023',
-    description: 'Advanced proficiency in Oracle database administration and development'
+    name: 'Google Cloud Certified Associate Engineer',
+    issuer: 'Google Cloud',
+    date: '2025'
+  },
+  {
+    name: 'BEC Lingua Skills',
+    issuer: 'Cambridge Assessment',
+    date: '2025'
+  },
+  {
+    name: 'AWS Cloud Practitioner',
+    issuer: 'Amazon Web Services',
+    date: '2024'
   },
   {
     name: 'RedHat Certified Enterprise Application Developer',
     issuer: 'RedHat',
-    date: '2024',
-    description: 'Expert-level skills in enterprise Java application development'
+    date: '2024'
+  },
+  {
+    name: 'Oracle Cloud Infrastructure Generative AI Certified Professional',
+    issuer: 'Oracle',
+    date: '2023'
   },
   {
     name: 'Salesforce Certified AI Associate',
     issuer: 'Salesforce',
-    date: '2023',
-    description: 'Proficiency in AI implementation within Salesforce ecosystem'
+    date: '2023'
   },
   {
     name: 'PowerBI Workshop',
     issuer: 'Microsoft',
-    date: '2023',
-    description: 'Data visualization and business intelligence using Power BI'
+    date: '2023'
   },
   {
-    name: 'Business English Certificate',
-    issuer: 'Cambridge English',
-    date: '2025',
-    description: 'LinguaSkill'
-  }
+    name: 'Coursera Credentials',
+    issuer: 'Java FullStack Developer Specialization (Board Infinity), Spring Framework Specialization (LearnQuest), Software Development Lifecycle Specialization (University of Minnesota)',
+    date: '2024'
+  },
+  {
+    name: 'Coursera Courses',
+    issuer: 'Data Structures & Backend with Java, Frontend for Java Full Stack Development, Spring Data Repositories, Spring MVC, Spring Boot and Rest Controllers, Data Warehousing: Schema, ETL, Optimal Performance',
+    date: '2023'
+  },
 ];
 
 const Education: React.FC = () => {
@@ -146,11 +160,11 @@ const Education: React.FC = () => {
               <h3 className="text-2xl font-bold text-wine-800">Certifications</h3>
             </div>
 
-            <div className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-wine-700"
+                  className="bg-white p-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 border-l-4 border-wine-700"
                 >
                   <div className="flex justify-between items-start mb-2">
                     <h4 className="text-lg font-bold text-wine-800">{cert.name}</h4>
