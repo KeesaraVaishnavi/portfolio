@@ -13,22 +13,23 @@ const projects: Project[] = [
     title: 'The Role of Big Data in Analyzing Climate Change Impacts on Agricultural Productivity',
     description: 'Developed a comprehensive data analysis pipeline to assess the impact of climate change on crop yields using big data techniques, statistical models, and visualizations.',
     technologies: ['Python', 'Pandas', 'Big Data', 'Matplotlib'],
-    image: './crop.png',
-    link: 'https://github.com/kvaishnavi24?tab=repositories'
+    image: 'https://images.pexels.com/photos/3025156/pexels-photo-3025156.jpeg', // Agriculture/Climate themed image
+    link: 'https://github.com/KeesaraVaishnavi/agriculture'
   },
   {
-    title: 'Bus Ticket Reservation Booking System',
-    description: 'Designed and implemented a web-based system with user registration, seat booking, payment integration, and ticket generation using JSP, Servlets, and MySQL.',
-    technologies: ['JSP', 'Servlets', 'MySQL', 'HTML', 'CSS'],
-    image: './bus.jpg',
-    link: 'https://github.com/kvaishnavi24?tab=repositories'
+    title: 'Data Science for Dynamic Traffic Flow Optimization',
+    description: 'Developed a data-driven traffic flow optimization system using historical and temporal data to analyze patterns and predict traffic volume for congestion management.',
+    technologies: ['Python', 'Machine Learning', 'Data Preprocessing', 'Data Analysis'],
+
+    image: 'https://media.istockphoto.com/id/159406920/photo/aerial-view-of-cars-in-traffic.jpg?s=612x612&w=0&k=20&c=2BeXnk1EppE_mfWgYFqoXidmge0uAhSk9gl8bbtHyF8=', // Bus/Transport themed image
+    link: 'https://github.com/KeesaraVaishnavi/Traffic'
   },
   {
     title: 'Web-Based Resource Library for Educational Materials',
     description: 'Built an online platform for students to access study materials, with authentication, file uploads, search, and role-based access using PHP and MySQL.',
-    technologies: ['PHP', 'MySQL', 'HTML', 'CSS'],
-    image: './library.jpg',
-    link: 'https://github.com/kvaishnavi24?tab=repositories'
+    technologies: ['Java','PHP', 'MySQL', 'HTML' ],
+    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg', // Education themed image
+    link: 'https://github.com/KeesaraVaishnavi/library'
   }
 ];
 
@@ -74,7 +75,7 @@ const Projects: React.FC = () => {
 
         <div className="text-center mt-12">
           <a 
-            href="https://github.com/kvaishnavi24" 
+            href="https://github.com/KeesaraVaishnavi" 
             target="_blank" 
             rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-wine-700 text-white rounded-md hover:bg-wine-800 transition-colors font-medium"
