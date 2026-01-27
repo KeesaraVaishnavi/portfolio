@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold text-wine-500 mb-2">Vaishnavi K</h2>
+            <h2 className="text-2xl font-bold text-wine-500 mb-2">Vaishnavi Keesara</h2>
             <p className="text-gray-400">Computer Science Engineering Student</p>
           </div>
           
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="https://github.com/kvaishnavi24"
+              href="https://github.com/KeesaraVaishnavi"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-wine-700 transition-colors"
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
               <GitHub size={20} />
             </a>
             <a
-              href="mailto:2200030438cseh@gmail.com"
+              href="mailto:keesaravaishnavi2005@gmail.com"
               className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-wine-700 transition-colors"
             >
               <Mail size={20} />
@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            &copy; {new Date().getFullYear()} Vaishnavi K. All rights reserved.
+            &copy; {new Date().getFullYear()} Keesara Lakshmi Siva Priya Vaishnavi.
           </p>
           
           <button
