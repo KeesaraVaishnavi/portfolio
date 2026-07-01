@@ -18,13 +18,13 @@ interface CertificationItem {
 
 const educationItems: EducationItem[] = [
   {
-    degree: 'Bachelor of Technology, Computer Science and Engineering - Honors',
+    degree: 'Bachelor of Technology, Computer Science and Engineering (CSE) - Honors',
     institution: 'KL University, Vaddeswaram, Vijayawada',
     location: 'Andhra Pradesh',
     period: '2022 - 2026',
     details: [
       'Current CGPA: 9.4/10',
-      'Specializing in Data Science and big data Analytics',
+      'Specialized in Data Science and big data Analytics',
       'Completed 4 Stack Development courses with hands-on projects',
       'Participated in various hackathons and technical events'
     ]
@@ -44,9 +44,9 @@ const educationItems: EducationItem[] = [
     degree: 'Central Board of Secondary Education, High School',
     institution: 'N St Mathews Public School, Vijayawada',
     location: 'Andhra Pradesh',
-    period: '2016 - 2020',
+    period: '2020',
     details: [
-      'CGPA: 8.5/10',
+      'CGPA: 8.4/10',
       'Completed core subjects including Mathematics, Social Sciences, and Languages',
       'Actively participated in school-level science exhibitions',
       'Participated in almost all extracurricular activities'
