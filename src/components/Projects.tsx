@@ -10,26 +10,25 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'The Role of Big Data in Analyzing Climate Change Impacts on Agricultural Productivity',
+    title: 'Big Data in Climate Agriculture',
     description: 'Developed a comprehensive data analysis pipeline to assess the impact of climate change on crop yields using big data techniques, statistical models, and visualizations.',
     technologies: ['Python', 'Pandas', 'Big Data', 'Matplotlib'],
-    image: 'https://images.pexels.com/photos/3025156/pexels-photo-3025156.jpeg', // Agriculture/Climate themed image
+    image: 'https://unsplash.com/s/photos/agriculture', // Agriculture/Climate themed image
     link: 'https://github.com/KeesaraVaishnavi/agriculture'
   },
   {
     title: 'Data Science for Dynamic Traffic Flow Optimization',
     description: 'Developed a data-driven traffic flow optimization system using historical and temporal data to analyze patterns and predict traffic volume for congestion management.',
     technologies: ['Python', 'Machine Learning', 'Data Preprocessing', 'Data Analysis'],
-
     image: 'https://media.istockphoto.com/id/159406920/photo/aerial-view-of-cars-in-traffic.jpg?s=612x612&w=0&k=20&c=2BeXnk1EppE_mfWgYFqoXidmge0uAhSk9gl8bbtHyF8=', // Bus/Transport themed image
     link: 'https://github.com/KeesaraVaishnavi/Traffic'
   },
   {
-    title: 'Web-Based Resource Library for Educational Materials',
+    title: 'AI Powered Legal Documentation Assistant ',
     description: 'Built an online platform for students to access study materials, with authentication, file uploads, search, and role-based access using PHP and MySQL.',
-    technologies: ['Java','PHP', 'MySQL', 'HTML' ],
-    image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg', // Education themed image
-    link: 'https://github.com/KeesaraVaishnavi/library'
+    technologies: ['React.js', 'REST APIs', 'LLM', 'NLP'],
+    image: 'https://wizr.ai/blog/ai-legal-assistants-automate-workflows/', // AI themed image
+    //link: 'https://github.com/KeesaraVaishnavi/library'
   }
 ];
 
