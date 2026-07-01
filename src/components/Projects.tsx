@@ -25,7 +25,7 @@ const projects: Project[] = [
   },
   {
     title: 'AI Powered Legal Documentation Assistant ',
-    description: 'Built an online platform for students to access study materials, with authentication, file uploads, search, and role-based access using PHP and MySQL.',
+    description: 'Implemented NLP-based prompt engineering features for context-aware legal information retrieval, demonstrating ability to work with ambiguous problem domains and deliver production-quality AI-powered solutions under hackathon constraints. ',
     technologies: ['React.js', 'REST APIs', 'LLM', 'NLP'],
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlzEGAoqpKLyB5jQQzstrMt4EQbZwQ7MfADvWw7XXZccbT4b0jnVz0S7mu&s=10', // AI themed image
     //link: 'https://github.com/KeesaraVaishnavi/library'
