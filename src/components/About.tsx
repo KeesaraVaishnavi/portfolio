@@ -13,15 +13,15 @@ const About: React.FC = () => {
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-5">
             <p className="text-base text-gray-700 leading-relaxed">
-              I am a Computer Science undergraduate at KL University, specializing in Data Science & Big Data Analytics, with a strong interest in building scalable and data-driven software solutions.
+              I am a Computer Science Graduate at KL University, specializing in Data Science & Big Data Analytics, with a strong interest in building scalable and data-driven software solutions.
             </p>
             
             <p className="text-base text-gray-700 leading-relaxed">
-              I am currently working as a Software Development Intern at Digineous Pvt. Ltd., Pune, contributing as a Frontend Developer using React.js, Node.js, and SQL, and developing and integrating RESTful APIs for real-world applications.
+              I worked as a Software Development Intern at Digineous Pvt. Ltd., Pune, contributing as a Frontend Developer using React.js, Node.js, and SQL, and developing and integrating RESTful APIs for real-world applications.
             </p>
             
             <p className="text-base text-gray-700 leading-relaxed">
-              I am also working as a Research Intern at AIIMS–Mangalagiri, in collaboration with KL University, on a Central Government–funded research project. My work involves real-world healthcare data collection, data segmentation, and data preprocessing using CNN-based techniques to support advanced analytics and machine learning workflows.
+              I also worked as a Research Intern at AIIMS–Mangalagiri, in collaboration with KL University, on a Central Government–funded research project. My work involves real-world healthcare data collection, data segmentation, and data preprocessing using CNN-based techniques to support advanced analytics and machine learning workflows.
             </p>
 
             <p className="text-base text-gray-700 leading-relaxed">
@@ -35,15 +35,14 @@ const About: React.FC = () => {
               <h3 className="text-xl font-bold mb-2">🎯 Focus Areas</h3>
               <ul className="text-sm space-y-1.5">
                 <li>• Data Analytics</li>
-                <li>• Frontend Development</li>
-                <li>• Backend Development</li>
+                <li>• Full-Stack Development</li>
                 <li>• Artifical Intelligence & Machine Learning</li>
               </ul>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md border-t-4 border-wine-700 hover:shadow-lg transition-shadow">
               <h3 className="text-lg font-bold text-gray-800 mb-2">🎓 Education</h3>
-              <p className="text-sm text-gray-600">CS Undergrad at KL University</p>
+              <p className="text-sm text-gray-600">CSE Graduate at KL University</p>
               <p className="text-xs text-wine-700 mt-2 font-semibold">Data Science & Big Data Analytics</p>
             </div>
           </div>
