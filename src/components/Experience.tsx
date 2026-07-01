@@ -12,7 +12,7 @@ const experiences: ExperienceItem[] = [
   {
     title: 'Software Developer Intern',
     company: 'Digineous Pvt Ltd, Pune',
-    period: 'Present',
+    period: 'Jan,2026 - Jun,2026',
     description: [
       'Developed responsive and user-friendly frontend interfaces using React.js, ensuring cross-browser compatibility and optimized performance.',
       'Integrated RESTful APIs with the frontend using Node.js, enabling seamless data flow between client and server components.',
@@ -23,7 +23,7 @@ const experiences: ExperienceItem[] = [
   {
     title: 'Research Intern',
     company: 'AIIMS, Mangalagiri (Collabed with KLU)',
-    period: 'Present',
+    period: '2024-2025',
     description: [
       'Collected real-time patient data for analysis and system development',
       'Segmented and analyzed medical audio data using .wav processing tools',
