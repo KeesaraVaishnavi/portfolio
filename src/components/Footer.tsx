@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <h2 className="text-2xl font-bold text-wine-500 mb-2">Vaishnavi Keesara</h2>
-            <p className="text-gray-400">Computer Science Engineering Student</p>
+            <p className="text-gray-400">Computer Science Engineer Graduate Student</p>
           </div>
           
           <div className="flex flex-col md:flex-row md:items-center gap-6 mb-6 md:mb-0">
