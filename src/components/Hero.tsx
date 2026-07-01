@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
               Btech | Computer Science Engineer 
             </h1>
             <p className="text-lg text-gray-800 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              Driven by curiosity and genuine interest in technology, I enjoy solving problems through software. As a Computer Science Engineering student, I focus on building meaningful digital solutions-whether that’s creating interactive data dashboards, developing efficient database-driven web applications, or writing clean, scalable code. I’m motivated by learning, improving, and applying technology in ways that make a real impact.
+              I'm a Computer Science Engineering graduate with internship experience in software development, data analysis, and web technologies. Through industry projects and hands-on learning, I've developed skills in full-stack development, databases, Python, Java, and AI/ML while building practical solutions to real-world challenges. I'm actively seeking Software Engineering opportunities in Full-Stack Development, Data Science & AI/ML, and Core Computer Science, where I can contribute, learn from experienced teams, and build scalable, user-focused applications.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-4">
               <a
@@ -33,12 +33,14 @@ const Hero: React.FC = () => {
                 Let's Connect
               </a>
               <a
-                href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 border-2 border-wine-800 text-wine-800 rounded-full hover:bg-wine-50 focus:outline-none focus:ring-2 focus:ring-wine-400 transition-all duration-300 transform hover:-translate-y-1"
-              >
-                <FolderOpen className="w-5 h-5" />
-                Explore My Projects
-              </a>
+  href="/Vaishnavi's_Resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center gap-2 px-6 py-3 border-2 border-wine-800 text-wine-800 rounded-full hover:bg-wine-50 focus:outline-none focus:ring-2 focus:ring-wine-400 transition-all duration-300 transform hover:-translate-y-1"
+>
+  <FolderOpen className="w-5 h-5" />
+  View Resume
+</a>
             </div>
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-gray-800 mb-4">My Interests Include:</h3>
