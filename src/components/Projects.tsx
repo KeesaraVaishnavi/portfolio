@@ -13,7 +13,7 @@ const projects: Project[] = [
     title: 'Big Data in Climate Agriculture',
     description: 'Developed a comprehensive data analysis pipeline to assess the impact of climate change on crop yields using big data techniques, statistical models, and visualizations.',
     technologies: ['Python', 'Pandas', 'Big Data', 'Matplotlib'],
-    image: 'https://unsplash.com/s/photos/agriculture', // Agriculture/Climate themed image
+    image: 'https://plus.unsplash.com/premium_photo-1661962692059-55d5a4319814?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', // Agriculture/Climate themed image
     link: 'https://github.com/KeesaraVaishnavi/agriculture'
   },
   {
@@ -27,7 +27,7 @@ const projects: Project[] = [
     title: 'AI Powered Legal Documentation Assistant ',
     description: 'Built an online platform for students to access study materials, with authentication, file uploads, search, and role-based access using PHP and MySQL.',
     technologies: ['React.js', 'REST APIs', 'LLM', 'NLP'],
-    image: 'https://wizr.ai/blog/ai-legal-assistants-automate-workflows/', // AI themed image
+    image: 'https://wizr.ai/wp-content/uploads/2025/07/AI-Legal-Assistants.webp/', // AI themed image
     //link: 'https://github.com/KeesaraVaishnavi/library'
   }
 ];
